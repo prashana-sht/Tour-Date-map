@@ -1,18 +1,75 @@
-.App {
+.header {
   text-align: center;
+  color: rgb(245, 238, 238);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.dates{
+  margin-top: 6px;
+  background-color: white;
+  padding: 3px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.dates b{
+  background-color: red;
+  color: white;
+  padding: 2px;
+  margin-left: 10px;
+}
+*{
+  background-color: black;
+  box-sizing: border-box;
+}
+h3{
+  background-color: white;
 }
 
+li{
+  color: white;
+}
+.column {
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+  padding: 0 10px;
+}
+
+.parent{
+  display: flex;
+  flex-direction: row;
+}
+.row {
+  margin: 0 -4px;
+  margin-left: 60px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.card{
+  text-align: left;
+  background-color: white;
+  padding: 15px;
+}
+
+.year {
+  color: black;
+  background-color: white;
+  margin-left: 20px;
+  padding-left: 10px;
+}
+
+button {
+  color: white;
+  background-color: black;
+  padding: 10px;
+  margin-left: 10px;
+}
+.year{
+  background-color: white;
+  text-align: left;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -22,17 +79,4 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
